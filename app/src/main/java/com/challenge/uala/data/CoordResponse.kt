@@ -1,6 +1,8 @@
 package com.challenge.uala.data
 
-data class Coord(
-    val lat: Double,
-    val lon: Double
+import com.google.gson.annotations.SerializedName
+
+data class CoordResponse(
+    @SerializedName("lat") val lat: Double,
+    @SerializedName("lon") val lon: Double
 )

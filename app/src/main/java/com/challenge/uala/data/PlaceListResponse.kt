@@ -1,3 +1,3 @@
 package com.challenge.uala.data
 
-class PlaceListResponse : ArrayList<PlaceListResponseItem>()
+data class PlaceListResponse(val places: List<PlaceItemResponse>)

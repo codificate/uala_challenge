@@ -1,8 +1,10 @@
 package com.challenge.uala.data
 
-data class PlaceListResponseItem(
-    val _id: Int,
-    val coord: Coord,
-    val country: String,
-    val name: String
+import com.google.gson.annotations.SerializedName
+
+data class PlaceItemResponse(
+    @SerializedName("_id") val _id: Int,
+    @SerializedName("coord") val coord: CoordResponse,
+    @SerializedName("country") val country: String,
+    @SerializedName("name") val name: String
 )
