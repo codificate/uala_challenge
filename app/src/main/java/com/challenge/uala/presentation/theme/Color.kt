@@ -1,4 +1,4 @@
-package com.challenge.uala.ui.theme
+package com.challenge.uala.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

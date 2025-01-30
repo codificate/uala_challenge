@@ -1,4 +1,4 @@
-package com.challenge.uala.ui.theme
+package com.challenge.uala.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.challenge.uala.ui.theme
+package com.challenge.uala.presentation.theme
 
 import android.app.Activity
 import android.os.Build
