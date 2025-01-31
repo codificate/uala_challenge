@@ -6,7 +6,7 @@ import com.challenge.uala.domain.repository.PlacesRepository
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class GetPlacesUseCases @Inject constructor(private val repository: PlacesRepository) {
+class GetPlacesUseCase @Inject constructor(private val repository: PlacesRepository) {
     suspend operator fun invoke(@RawRes jsonFileId: Int) = flow {
         repository.getPlaces(jsonFileId).collect { entity ->
             emit(entity.toPlaces().sortedBy { place -> place.name })
