@@ -25,7 +25,12 @@ object UalaChallengeDiModule {
     }
 
     @Provides
-    fun providesUseCase(repository: PlacesRepository): GetPlacesUseCase {
+    fun providesGetPlacesUseCase(repository: PlacesRepository): GetPlacesUseCase {
+        return GetPlacesUseCase(repository)
+    }
+
+    @Provides
+    fun providesFindByTextUseCase(repository: PlacesRepository): GetPlacesUseCase {
         return GetPlacesUseCase(repository)
     }
 }
