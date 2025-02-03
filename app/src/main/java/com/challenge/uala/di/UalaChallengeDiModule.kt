@@ -4,6 +4,7 @@ import android.content.Context
 import com.challenge.uala.data.datasource.PlacesDatasource
 import com.challenge.uala.data.repository.PlacesRepositoryImpl
 import com.challenge.uala.domain.repository.PlacesRepository
+import com.challenge.uala.domain.usecase.FindByTextUseCase
 import com.challenge.uala.domain.usecase.GetPlacesUseCase
 import dagger.Module
 import dagger.Provides
@@ -30,7 +31,7 @@ object UalaChallengeDiModule {
     }
 
     @Provides
-    fun providesFindByTextUseCase(repository: PlacesRepository): GetPlacesUseCase {
-        return GetPlacesUseCase(repository)
+    fun providesFindByTextUseCase(repository: PlacesRepository): FindByTextUseCase {
+        return FindByTextUseCase(repository)
     }
 }
